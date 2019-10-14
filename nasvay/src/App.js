@@ -13,7 +13,7 @@ class App extends Component {
     this.setState({ text: value })
   }
   appendSosi(value) {
-    axios.get('http://xe124.ru:3001/huy?string=' + value)
+    axios.get('http://localhost:3001/huy?string=' + value)
       .then(data => {
         this.changeState(data.data)
       })
