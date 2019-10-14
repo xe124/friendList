@@ -32,3 +32,19 @@ textarea {
   background-color: black;
   color: white;
 }
+
+.searchResults {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.userCard {
+  flex-basis: 10em;
+  margin: 20px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+}
