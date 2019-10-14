@@ -10,7 +10,7 @@ var conn = mongoose.connection;
 var cors = require('cors');
 app.use(cors({ origin: 'http://xe124.ru:3000', credentials :  true}));
 
-mongoose.connect('mongodb://localhost:27017/vkfriends'{
+mongoose.connect('mongodb://localhost:27017/vkfriends', {
   useNewUrlParser: true, useUnifiedTopology: true
 });
 mongoose.model('users', new Schema({ name: String, lastName: String, id: Number, DickLength: Number }));
